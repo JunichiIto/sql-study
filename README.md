@@ -5,6 +5,13 @@ Sample app for https://nishiwaki-koberb.doorkeeper.jp/events/39705
 
 ![screen shot 2016-03-14 at 07 50 30](https://cloud.githubusercontent.com/assets/1148320/13731956/81474864-e9b9-11e5-92e7-a467aaae8a01.png)
 
+## Environments
+
+- `rbenv` がインストールされていること
+- `rbenv` でRuby 2.2系がインストールされていること
+- Ruby 2.2系に `bundler` がインストールされていること
+- Postgres 9.4以上がインストールされていること（MacはHomebrewからインストールすること）
+
 ## How to setup
 
 1. このリポジトリを自分のアカウントへフォークする
@@ -42,6 +49,7 @@ Sample app for https://nishiwaki-koberb.doorkeeper.jp/events/39705
 
 - 変更して良いのは `= render layout: 'layouts/answer_section' do` から下のコードと、モデルのコードのみ。コントローラやテストコードは変更してはいけない。
 - SQL1発で求められている結果を表示できるようにする。クエリを2回以上発行したり、RubyのコードでソートやフィルタリングをするのはNG。
+- ExampleにIDが出ている場合、IDの値まで全く同じにする必要はない。（ソート順の正しさが確認できればそれで良い）
 
 ## Suggested answers
 
