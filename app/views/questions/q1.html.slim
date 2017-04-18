@@ -34,12 +34,12 @@ table.table
   tr
     th Member
     th Event
-    th Canceled?
+    th Cancelled?
   - EventParticipation.order(:id).each do |participation|
     tr
       td = participation.member.name
       td = participation.event.name
-      td = participation.canceled?
+      td = participation.cancelled?
 
 h2 設問. Ruby勉強会に参加していないメンバーの一覧を表示してください
 

@@ -29,11 +29,11 @@ java_study.members << chris
 
 ruby_study.members << chris
 chris_participation = EventParticipation.last
-chris_participation.update! canceled: true
+chris_participation.update! cancelled: true
 
 java_study.members << alice
 alice_participation = EventParticipation.last
-alice_participation.update! canceled: true
+alice_participation.update! cancelled: true
 
 # Question 2 ============================
 Comment.delete_all

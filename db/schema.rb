@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 20160305023831) do
   create_table "event_participations", force: :cascade do |t|
     t.integer  "event_id"
     t.integer  "member_id"
-    t.boolean  "canceled",   default: false, null: false
+    t.boolean  "cancelled",   default: false, null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
